@@ -16,12 +16,11 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 def to_alternating_case(string):
     alternate_string = ''
     for letter in string:
-        if letter.isdigit():
+        if letter.isalpha():
+            if letter.islower():
+                alternate_string += letter.upper()
+            elif letter.isupper():
+                alternate_string += letter.lower()
+        else:
             alternate_string += letter
-        elif letter.islower():
-            alternate_string += letter.upper()
-        elif letter.isupper():
-            alternate_string += letter.lower()
     return alternate_string
-
-
