@@ -24,3 +24,4 @@ For lastPlayer = "white" and win = true, the output should be "white".
 '''
 def whose_move(last_player, win):
     # ... # Your Move].
+    pass
