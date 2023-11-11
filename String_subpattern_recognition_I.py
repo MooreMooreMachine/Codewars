@@ -21,8 +21,9 @@ def has_subpattern(strng):
         sublist = []
         for i in range(0, len(strng), step):
             sublist.append(strng[i:i + step])
-        print(len(set(sublist)))
         if len(set(sublist)) == 1:
             return True
     return False
+
+print(has_subpattern('abbaabbaabba'))
 
